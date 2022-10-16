@@ -1,7 +1,7 @@
 #!/bin/bash
-echo  '<<bash 시작>>'  &&  echo
+echo && echo && ehco  '<<<<<<<< bash 시작 >>>>>>>>>>'  &&  echo
 installDependencies() {
-    echo  "nestjs/cli, quasar/cli 설치..."  && echo
+    echo && echo  "[nestjs/cli, quasar/cli 설치...]"  && echo
     npm i -g @nestjs/cli
     npm i -g @quasar/cli
 }
@@ -30,4 +30,4 @@ setupClient() {
 #installDependencies && setupServer && setupClient && copy
 #installDependencies && setupServer && setupClient && copy
 installDependencies && setupServer && setupClient
-echo  '<<bash 종료>>'  &&  echo
+echo && echo && ehco  '<<<<<<<< bash 종료 >>>>>>>>>>'  &&  echo
