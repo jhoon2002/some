@@ -16,9 +16,9 @@ setupServer() {
 setupClient() {
     cd ./frontend || return
     echo && echo  "[프론트엔드 설치...]" && echo
-    Yarn install --production = false
+    npm install && npm install --only=dev
     echo && echo  "[프론트엔드 빌드...]" && echo
-    yarn build
+    npm run build
     cd ..
 }
 #copy() {
