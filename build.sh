@@ -1,8 +1,5 @@
 #!/bin/bash
-echo ''
-echo ''
-echo ''
-ehco  '<<<<<<<< bash 시작 >>>>>>>>>>'  &&  echo
+echo && echo && echo && echo  "<< bash 시작 >>" && echo
 installDependencies() {
     echo && echo && echo && echo  "[nestjs/cli, quasar/cli 설치...]"  && echo
     yarn global add @nestjs/cli
@@ -10,16 +7,12 @@ installDependencies() {
 }
 setupServer() {
     cd ./backend || return
-    #    echo && echo  "[백엔드 설치...]" && echo
-    #    yarn install
-     echo && echo && echo && echo  "[백엔드 빌드...]" && echo
+    echo && echo && echo && echo  "[백엔드 빌드...]" && echo
     yarn build
     cd ..
 }
 setupClient() {
     cd ./frontend || return
-    #    echo && echo  "[프론트엔드 설치...]" && echo
-    #    yarn install
     echo && echo && echo && echo  "[프론트엔드 빌드...]" && echo
     yarn build
     cd ..
@@ -33,3 +26,4 @@ setupClient() {
 #installDependencies && setupServer && setupClient && copy
 #installDependencies && setupServer && setupClient && copy
 installDependencies && setupServer && setupClient
+echo && echo && echo && echo  "<< bash 종료 >>" && echo
