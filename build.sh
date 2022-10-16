@@ -7,13 +7,17 @@ installDependencies() {
 }
 setupServer() {
     cd ./backend || return
-    echo  "백엔드 빌드..."
+    echo && echo  "[백엔드 설치...]" && echo
+    yarn install
+    echo && echo  "[백엔드 빌드...]" && echo
     yarn build
     cd ..
 }
 setupClient() {
     cd ./frontend || return
-    echo  "프론트엔드 빌드..."
+    echo && echo  "[프론트엔드 설치...]" && echo
+    yarn install
+    echo && echo  "[프론트엔드 빌드...]" && echo
     yarn build
     cd ..
 }
