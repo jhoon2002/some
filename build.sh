@@ -3,7 +3,7 @@ echo && echo && ehco  '<<<<<<<< bash 시작 >>>>>>>>>>'  &&  echo
 installDependencies() {
     echo && echo  "[nestjs/cli, quasar/cli 설치...]"  && echo
     npm i -g @nestjs/cli
-#    npm i -g @quasar/cli
+    npm i -g @quasar/cli@1.1.3
 }
 setupServer() {
     cd ./backend || return
