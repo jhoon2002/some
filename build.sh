@@ -1,5 +1,8 @@
 #!/bin/bash
-echo && echo && ehco  '<<<<<<<< bash 시작 >>>>>>>>>>'  &&  echo
+echo ''
+echo ''
+echo ''
+ehco  '<<<<<<<< bash 시작 >>>>>>>>>>'  &&  echo
 installDependencies() {
     echo && echo && echo && echo  "[nestjs/cli, quasar/cli 설치...]"  && echo
     yarn global add @nestjs/cli
@@ -30,4 +33,4 @@ setupClient() {
 #installDependencies && setupServer && setupClient && copy
 #installDependencies && setupServer && setupClient && copy
 installDependencies && setupServer && setupClient
-echo && echo && ehco  '<<<<<<<< bash 종료 >>>>>>>>>>'  &&  echo &&  echo
+ehco  '<<<<<<<< bash 종료 >>>>>>>>>>'  &&  echo
