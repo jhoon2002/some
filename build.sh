@@ -33,4 +33,3 @@ setupClient() {
 #installDependencies && setupServer && setupClient && copy
 #installDependencies && setupServer && setupClient && copy
 installDependencies && setupServer && setupClient
-ehco  '<<<<<<<< bash 종료 >>>>>>>>>>'  &&  echo
