@@ -1,13 +1,13 @@
 {
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "backend",
-      "frontend"
-    ]
-  },
-  "scripts": {
-    "postinstall": "bash build.sh",
-    "start": "yarn workspace frontend start"
-  }
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "backend",
+            "frontend"
+        ]
+    },
+    "scripts": {
+        "postinstall": "bash build.sh",
+        "start": "yarn workspace frontend start"
+    }
 }
